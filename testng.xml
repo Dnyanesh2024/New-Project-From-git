@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="listeners_eParwana.MyListeners"></listener>
+
+	</listeners>
+	
+	<parameter name="Excel_path"
+		value="D:\NewWorkspace\com.e_Parwana_HybrideFramework\src\main\resources\Portal_DHE_Raj.xlsx"></parameter>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Test.Login_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
